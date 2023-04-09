@@ -1,9 +1,9 @@
-Do
-  inputMsg = InputBox("请输入“爸爸”", "your father")
-  If inputMsg = "爸爸" Then
-    MsgBox "儿子乖"
-    Exit Do
-  ElseIf inputMsg <> "" Then
-    MsgBox "坏蛋，不叫爸爸还想跑！"
-  End If
-Loop While True
+Do While True
+    response = InputBox("请叫'爸爸'")
+    If response = "爸爸" Then
+        MsgBox "儿子乖！"
+        Exit Do
+    Else
+        MsgBox "坏孩子，不叫爸爸还想跑！"
+    End If
+Loop
